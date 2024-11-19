@@ -18,6 +18,7 @@ ament_target_dependencies(test1
         sensor_msgs
         cv_bridge
         OpenCV
+        geometry_msgs
 )
 
 install(TARGETS
