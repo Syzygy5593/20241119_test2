@@ -1,0 +1,182 @@
+[0.000000] (-) TimerEvent: {}
+[0.000782] (imgsubscriber) JobQueued: {'identifier': 'imgsubscriber', 'dependencies': OrderedDict()}
+[0.000834] (imgsubscriber) JobStarted: {'identifier': 'imgsubscriber'}
+[0.008999] (imgsubscriber) JobProgress: {'identifier': 'imgsubscriber', 'progress': 'cmake'}
+[0.009241] (imgsubscriber) Command: {'cmd': ['/usr/bin/cmake', '/home/noth5593/CLionProjects/20241119_test2/imgrcv', '-DCMAKE_INSTALL_PREFIX=/home/noth5593/CLionProjects/20241119_test2/install/imgsubscriber'], 'cwd': '/home/noth5593/CLionProjects/20241119_test2/build/imgsubscriber', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,::1'), ('USER', 'noth5593'), ('LC_TIME', 'zh_CN.UTF-8'), ('all_proxy', 'socks://127.0.0.1:7890/'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/noth5593'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2344'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=8139f1dbf6701453cb53a0e0673c68ca'), ('COLORTERM', 'truecolor'), ('https_proxy', 'http://127.0.0.1:7890/'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'noth5593'), ('ALL_PROXY', 'socks://127.0.0.1:7890/'), ('http_proxy', 'http://127.0.0.1:7890/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', ':/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'noth5593'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Syzygy5593-Zenbook-UX3404VC:@/tmp/.ICE-unix/2344,unix/Syzygy5593-Zenbook-UX3404VC:/tmp/.ICE-unix/2344'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/cd9c2e0e_7c8f_4797_8430_9a7f28a257c9'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.263'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/noth5593/CLionProjects/20241119_test2/build/imgsubscriber'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=8139f1dbf6701453cb53a0e0673c68ca'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.087214] (imgsubscriber) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.099501] (-) TimerEvent: {}
+[0.165040] (imgsubscriber) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.174437] (imgsubscriber) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.199646] (-) TimerEvent: {}
+[0.266247] (imgsubscriber) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.275901] (imgsubscriber) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.276256] (imgsubscriber) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.276827] (imgsubscriber) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.280582] (imgsubscriber) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.299758] (-) TimerEvent: {}
+[0.378592] (imgsubscriber) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.388216] (imgsubscriber) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.388464] (imgsubscriber) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.389250] (imgsubscriber) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.391331] (imgsubscriber) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.399893] (-) TimerEvent: {}
+[0.500446] (-) TimerEvent: {}
+[0.600961] (-) TimerEvent: {}
+[0.614035] (imgsubscriber) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.701088] (-) TimerEvent: {}
+[0.718350] (imgsubscriber) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.764788] (imgsubscriber) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.769276] (imgsubscriber) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.777576] (imgsubscriber) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.789834] (imgsubscriber) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.801357] (-) TimerEvent: {}
+[0.806085] (imgsubscriber) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.853472] (imgsubscriber) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.856213] (imgsubscriber) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.901630] (-) TimerEvent: {}
+[0.962705] (imgsubscriber) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.996082] (imgsubscriber) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.001733] (-) TimerEvent: {}
+[1.045336] (imgsubscriber) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.054264] (imgsubscriber) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.101878] (-) TimerEvent: {}
+[1.150994] (imgsubscriber) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.151463] (imgsubscriber) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.202000] (-) TimerEvent: {}
+[1.247671] (imgsubscriber) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.249356] (imgsubscriber) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.302116] (-) TimerEvent: {}
+[1.311182] (imgsubscriber) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.349076] (imgsubscriber) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)\n'}
+[1.366359] (imgsubscriber) StdoutLine: {'line': b'-- Found OpenCV: /usr/local (found version "4.5.5") \n'}
+[1.369278] (imgsubscriber) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.402325] (-) TimerEvent: {}
+[1.463209] (imgsubscriber) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.463465] (imgsubscriber) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[1.463535] (imgsubscriber) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.464068] (imgsubscriber) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.464911] (imgsubscriber) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.465064] (imgsubscriber) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.465390] (imgsubscriber) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.466623] (imgsubscriber) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.482234] (imgsubscriber) StdoutLine: {'line': b'-- Generating done\n'}
+[1.484035] (imgsubscriber) StdoutLine: {'line': b'-- Build files have been written to: /home/noth5593/CLionProjects/20241119_test2/build/imgsubscriber\n'}
+[1.498500] (imgsubscriber) CommandEnded: {'returncode': 0}
+[1.499744] (imgsubscriber) JobProgress: {'identifier': 'imgsubscriber', 'progress': 'build'}
+[1.500755] (imgsubscriber) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/noth5593/CLionProjects/20241119_test2/build/imgsubscriber', '--', '-j20', '-l20'], 'cwd': '/home/noth5593/CLionProjects/20241119_test2/build/imgsubscriber', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,::1'), ('USER', 'noth5593'), ('LC_TIME', 'zh_CN.UTF-8'), ('all_proxy', 'socks://127.0.0.1:7890/'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/noth5593'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2344'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=8139f1dbf6701453cb53a0e0673c68ca'), ('COLORTERM', 'truecolor'), ('https_proxy', 'http://127.0.0.1:7890/'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'noth5593'), ('ALL_PROXY', 'socks://127.0.0.1:7890/'), ('http_proxy', 'http://127.0.0.1:7890/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', ':/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'noth5593'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Syzygy5593-Zenbook-UX3404VC:@/tmp/.ICE-unix/2344,unix/Syzygy5593-Zenbook-UX3404VC:/tmp/.ICE-unix/2344'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/cd9c2e0e_7c8f_4797_8430_9a7f28a257c9'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.263'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/noth5593/CLionProjects/20241119_test2/build/imgsubscriber'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=8139f1dbf6701453cb53a0e0673c68ca'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.502438] (-) TimerEvent: {}
+[1.579916] (imgsubscriber) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/test1.dir/src/test1.cpp.o\x1b[0m\n'}
+[1.602582] (-) TimerEvent: {}
+[1.702985] (-) TimerEvent: {}
+[1.803405] (-) TimerEvent: {}
+[1.903848] (-) TimerEvent: {}
+[2.004296] (-) TimerEvent: {}
+[2.104711] (-) TimerEvent: {}
+[2.205283] (-) TimerEvent: {}
+[2.305814] (-) TimerEvent: {}
+[2.406246] (-) TimerEvent: {}
+[2.506674] (-) TimerEvent: {}
+[2.607154] (-) TimerEvent: {}
+[2.707765] (-) TimerEvent: {}
+[2.808319] (-) TimerEvent: {}
+[2.908868] (-) TimerEvent: {}
+[3.009337] (-) TimerEvent: {}
+[3.109855] (-) TimerEvent: {}
+[3.210283] (-) TimerEvent: {}
+[3.310719] (-) TimerEvent: {}
+[3.411162] (-) TimerEvent: {}
+[3.511610] (-) TimerEvent: {}
+[3.612086] (-) TimerEvent: {}
+[3.712491] (-) TimerEvent: {}
+[3.812916] (-) TimerEvent: {}
+[3.913318] (-) TimerEvent: {}
+[4.013765] (-) TimerEvent: {}
+[4.114134] (-) TimerEvent: {}
+[4.214510] (-) TimerEvent: {}
+[4.314952] (-) TimerEvent: {}
+[4.415271] (-) TimerEvent: {}
+[4.515685] (-) TimerEvent: {}
+[4.616121] (-) TimerEvent: {}
+[4.716570] (-) TimerEvent: {}
+[4.817052] (-) TimerEvent: {}
+[4.917488] (-) TimerEvent: {}
+[5.017927] (-) TimerEvent: {}
+[5.118371] (-) TimerEvent: {}
+[5.218799] (-) TimerEvent: {}
+[5.221510] (imgsubscriber) StderrLine: {'line': b'\x1b[01m\x1b[K/home/noth5593/CLionProjects/20241119_test2/imgrcv/src/test1.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[Ktest1::test1()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.221708] (imgsubscriber) StderrLine: {'line': b'\x1b[01m\x1b[K/home/noth5593/CLionProjects/20241119_test2/imgrcv/src/test1.cpp:9:66:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::Node()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.222001] (imgsubscriber) StderrLine: {'line': b'    9 |     test1() : node_(rclcpp::Node::make_shared("image_subscriber")\x1b[01;31m\x1b[K)\x1b[m\x1b[K\n'}
+[5.222092] (imgsubscriber) StderrLine: {'line': b'      |                                                                  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[5.222147] (imgsubscriber) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[5.222198] (imgsubscriber) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[5.222246] (imgsubscriber) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[5.222299] (imgsubscriber) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/noth5593/CLionProjects/20241119_test2/imgrcv/src/test1.cpp:1\x1b[m\x1b[K:\n'}
+[5.222347] (imgsubscriber) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1294:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::Node(const rclcpp::Node&, const string&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.222396] (imgsubscriber) StderrLine: {'line': b' 1294 |   \x1b[01;36m\x1b[KNode\x1b[m\x1b[K(\n'}
+[5.222442] (imgsubscriber) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[5.222488] (imgsubscriber) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1294:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 0 provided\n'}
+[5.222536] (imgsubscriber) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:101:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::Node(const string&, const string&, const rclcpp::NodeOptions&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.222582] (imgsubscriber) StderrLine: {'line': b'  101 |   explicit \x1b[01;36m\x1b[KNode\x1b[m\x1b[K(\n'}
+[5.222631] (imgsubscriber) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[5.222675] (imgsubscriber) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:101:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 3 arguments, 0 provided\n'}
+[5.222717] (imgsubscriber) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:89:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::Node(const string&, const rclcpp::NodeOptions&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.222774] (imgsubscriber) StderrLine: {'line': b'   89 |   explicit \x1b[01;36m\x1b[KNode\x1b[m\x1b[K(\n'}
+[5.222821] (imgsubscriber) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[5.222863] (imgsubscriber) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:89:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 0 provided\n'}
+[5.319017] (-) TimerEvent: {}
+[5.419376] (-) TimerEvent: {}
+[5.519720] (-) TimerEvent: {}
+[5.620082] (-) TimerEvent: {}
+[5.720519] (-) TimerEvent: {}
+[5.820989] (-) TimerEvent: {}
+[5.921450] (-) TimerEvent: {}
+[6.021979] (-) TimerEvent: {}
+[6.122486] (-) TimerEvent: {}
+[6.223047] (-) TimerEvent: {}
+[6.323552] (-) TimerEvent: {}
+[6.424124] (-) TimerEvent: {}
+[6.524578] (-) TimerEvent: {}
+[6.625023] (-) TimerEvent: {}
+[6.725560] (-) TimerEvent: {}
+[6.826081] (-) TimerEvent: {}
+[6.843343] (imgsubscriber) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33\x1b[m\x1b[K,\n'}
+[6.843583] (imgsubscriber) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/bits/allocator.h:46\x1b[m\x1b[K,\n'}
+[6.843689] (imgsubscriber) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:64\x1b[m\x1b[K,\n'}
+[6.843809] (imgsubscriber) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[6.843902] (imgsubscriber) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/noth5593/CLionProjects/20241119_test2/imgrcv/src/test1.cpp:1\x1b[m\x1b[K:\n'}
+[6.843992] (imgsubscriber) StderrLine: {'line': b'/usr/include/c++/11/ext/new_allocator.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = test1; _Args = {const char (&)[6]}; _Tp = test1]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.844085] (imgsubscriber) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/alloc_traits.h:516:17:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = test1; _Args = {const char (&)[6]}; _Tp = test1; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<test1>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.844180] (imgsubscriber) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {const char (&)[6]}; _Tp = test1; _Alloc = std::allocator<test1>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.844271] (imgsubscriber) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = test1; _Alloc = std::allocator<test1>; _Args = {const char (&)[6]}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.844362] (imgsubscriber) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<test1>; _Args = {const char (&)[6]}; _Tp = test1; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.844484] (imgsubscriber) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:409:59:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<test1>; _Args = {const char (&)[6]}; _Tp = test1]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.844577] (imgsubscriber) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:862:14:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = test1; _Alloc = std::allocator<test1>; _Args = {const char (&)[6]}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.844674] (imgsubscriber) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:878:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = test1; _Args = {const char (&)[6]}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.844775] (imgsubscriber) StderrLine: {'line': b'\x1b[01m\x1b[K/home/noth5593/CLionProjects/20241119_test2/imgrcv/src/test1.cpp:38:40:\x1b[m\x1b[K   required from here\n'}
+[6.844869] (imgsubscriber) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/ext/new_allocator.h:162:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Ktest1::test1(const char [6])\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.844961] (imgsubscriber) StderrLine: {'line': b'  162 |         { \x1b[01;31m\x1b[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)\x1b[m\x1b[K; }\n'}
+[6.845050] (imgsubscriber) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.845138] (imgsubscriber) StderrLine: {'line': b'\x1b[01m\x1b[K/home/noth5593/CLionProjects/20241119_test2/imgrcv/src/test1.cpp:9:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktest1::test1()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.845228] (imgsubscriber) StderrLine: {'line': b'    9 |     \x1b[01;36m\x1b[Ktest1\x1b[m\x1b[K() : node_(rclcpp::Node::make_shared("image_subscriber"))\n'}
+[6.845316] (imgsubscriber) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[6.845405] (imgsubscriber) StderrLine: {'line': b'\x1b[01m\x1b[K/home/noth5593/CLionProjects/20241119_test2/imgrcv/src/test1.cpp:9:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 0 arguments, 1 provided\n'}
+[6.926254] (-) TimerEvent: {}
+[7.026773] (-) TimerEvent: {}
+[7.127285] (-) TimerEvent: {}
+[7.227685] (-) TimerEvent: {}
+[7.328134] (-) TimerEvent: {}
+[7.428585] (-) TimerEvent: {}
+[7.529096] (-) TimerEvent: {}
+[7.629618] (-) TimerEvent: {}
+[7.730189] (-) TimerEvent: {}
+[7.830660] (-) TimerEvent: {}
+[7.931190] (-) TimerEvent: {}
+[8.031710] (-) TimerEvent: {}
+[8.132236] (-) TimerEvent: {}
+[8.229813] (imgsubscriber) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/test1.dir/build.make:76: CMakeFiles/test1.dir/src/test1.cpp.o] Error 1\n'}
+[8.230205] (imgsubscriber) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/test1.dir/all] Error 2\n'}
+[8.230364] (imgsubscriber) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[8.232415] (-) TimerEvent: {}
+[8.233304] (imgsubscriber) CommandEnded: {'returncode': 2}
+[8.283435] (imgsubscriber) JobEnded: {'identifier': 'imgsubscriber', 'rc': 2}
+[8.294071] (-) EventReactorShutdown: {}

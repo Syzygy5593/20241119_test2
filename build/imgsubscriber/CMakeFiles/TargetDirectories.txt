@@ -1,0 +1,10 @@
+/home/noth5593/CLionProjects/20241119_test2/build/imgsubscriber/CMakeFiles/uninstall.dir
+/home/noth5593/CLionProjects/20241119_test2/build/imgsubscriber/CMakeFiles/imgsubscriber_uninstall.dir
+/home/noth5593/CLionProjects/20241119_test2/build/imgsubscriber/CMakeFiles/test1.dir
+/home/noth5593/CLionProjects/20241119_test2/build/imgsubscriber/CMakeFiles/test.dir
+/home/noth5593/CLionProjects/20241119_test2/build/imgsubscriber/CMakeFiles/edit_cache.dir
+/home/noth5593/CLionProjects/20241119_test2/build/imgsubscriber/CMakeFiles/rebuild_cache.dir
+/home/noth5593/CLionProjects/20241119_test2/build/imgsubscriber/CMakeFiles/list_install_components.dir
+/home/noth5593/CLionProjects/20241119_test2/build/imgsubscriber/CMakeFiles/install.dir
+/home/noth5593/CLionProjects/20241119_test2/build/imgsubscriber/CMakeFiles/install/local.dir
+/home/noth5593/CLionProjects/20241119_test2/build/imgsubscriber/CMakeFiles/install/strip.dir

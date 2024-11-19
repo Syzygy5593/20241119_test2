@@ -1,0 +1,22 @@
+[35m[1mConsolidate compiler generated dependencies of target test1[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/test1.dir/src/test1.cpp.o[0m
+[100%] [32m[1mLinking CXX executable test1[0m
+[100%] Built target test1
+-- Install configuration: ""
+-- Installing: /home/noth5593/CLionProjects/20241119_test2/install/imgsubscriber/lib/imgsubscriber/test1
+-- Set runtime path of "/home/noth5593/CLionProjects/20241119_test2/install/imgsubscriber/lib/imgsubscriber/test1" to ""
+-- Installing: /home/noth5593/CLionProjects/20241119_test2/install/imgsubscriber/share/ament_index/resource_index/package_run_dependencies/imgsubscriber
+-- Installing: /home/noth5593/CLionProjects/20241119_test2/install/imgsubscriber/share/ament_index/resource_index/parent_prefix_path/imgsubscriber
+-- Installing: /home/noth5593/CLionProjects/20241119_test2/install/imgsubscriber/share/imgsubscriber/environment/ament_prefix_path.sh
+-- Installing: /home/noth5593/CLionProjects/20241119_test2/install/imgsubscriber/share/imgsubscriber/environment/ament_prefix_path.dsv
+-- Installing: /home/noth5593/CLionProjects/20241119_test2/install/imgsubscriber/share/imgsubscriber/environment/path.sh
+-- Installing: /home/noth5593/CLionProjects/20241119_test2/install/imgsubscriber/share/imgsubscriber/environment/path.dsv
+-- Installing: /home/noth5593/CLionProjects/20241119_test2/install/imgsubscriber/share/imgsubscriber/local_setup.bash
+-- Installing: /home/noth5593/CLionProjects/20241119_test2/install/imgsubscriber/share/imgsubscriber/local_setup.sh
+-- Installing: /home/noth5593/CLionProjects/20241119_test2/install/imgsubscriber/share/imgsubscriber/local_setup.zsh
+-- Installing: /home/noth5593/CLionProjects/20241119_test2/install/imgsubscriber/share/imgsubscriber/local_setup.dsv
+-- Installing: /home/noth5593/CLionProjects/20241119_test2/install/imgsubscriber/share/imgsubscriber/package.dsv
+-- Installing: /home/noth5593/CLionProjects/20241119_test2/install/imgsubscriber/share/ament_index/resource_index/packages/imgsubscriber
+-- Installing: /home/noth5593/CLionProjects/20241119_test2/install/imgsubscriber/share/imgsubscriber/cmake/imgsubscriberConfig.cmake
+-- Installing: /home/noth5593/CLionProjects/20241119_test2/install/imgsubscriber/share/imgsubscriber/cmake/imgsubscriberConfig-version.cmake
+-- Installing: /home/noth5593/CLionProjects/20241119_test2/install/imgsubscriber/share/imgsubscriber/package.xml
