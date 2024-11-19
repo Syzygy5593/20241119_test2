@@ -20,6 +20,7 @@ private:
         {
             cv_bridge::CvImagePtr cv_ptr = cv_bridge::toCvCopy(msg, "bgr8");
             Mat img = cv_ptr->image;
+            //----------------------------------------//
             rectangle(img,Point(0,0),Point(100,50),Scalar(0,0,0),FILLED);
             imshow("Image window", img);
             waitKey(1);
