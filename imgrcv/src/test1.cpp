@@ -96,10 +96,9 @@ private:
                 if(distance<40){
                     //circle(imgDraw, cv::Point(targetX, targetY), 10, cv::Scalar(0, 255 , 0), -1);
                     geometry_msgs::msg::Point32 info;
-                    info.x = 1.0f*targetX; // 示例x坐标
-                    info.y = 1.0f*targetY; // 示例y坐标
-                    info.z = 0.0f; // 对于Point32，z坐标总是0
-                    RCLCPP_INFO(this->get_logger(), "Publishing: (%f, %f, %f)", info.x, info.y, info.z);
+                    info.x = 1.0f*targetX;
+                    info.y = 1.0f*targetY;
+                    RCLCPP_INFO(this->get_logger(), "Publishing: (%f, %f)", info.x, info.y);
                     publisher_->publish(info);
                     break;
                 }
