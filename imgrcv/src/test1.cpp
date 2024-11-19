@@ -2,6 +2,7 @@
 #include <sensor_msgs/msg/image.hpp>
 #include <opencv2/opencv.hpp>
 #include <cv_bridge/cv_bridge.h>
+using namespace cv;
 
 class test1 : public rclcpp::Node
 {
@@ -18,8 +19,9 @@ private:
         try
         {
             cv_bridge::CvImagePtr cv_ptr = cv_bridge::toCvCopy(msg, "bgr8");
-            cv::imshow("Image window", cv_ptr->image);
-            cv::waitKey(1);
+            //rectangle(cv_ptr->image,Point(0,0),Point(100,50),Scalar(0,0,0),FILLED);
+            imshow("Image window", cv_ptr->image);
+            waitKey(1);
         }
         catch (cv_bridge::Exception& e)
         {
