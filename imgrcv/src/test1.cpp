@@ -93,7 +93,7 @@ private:
                 int targetY = slope*targetX + intercept;
                 double distance = sqrt(pow(targetX-cX,2)+pow(targetY-cY,2));
                 //line(imgDraw, Point(targetX,targetY), Point(cX,cY), Scalar(255, 255, 255), 1, LINE_AA);
-                if(distance<40){
+                if(distance<50){
                     //circle(imgDraw, cv::Point(targetX, targetY), 10, cv::Scalar(0, 255 , 0), -1);
                     geometry_msgs::msg::Point32 info;
                     info.x = 1.0f*targetX;
