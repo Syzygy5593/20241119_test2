@@ -1,4 +1,0 @@
-Invoking command in '/home/noth5593/CLionProjects/20241119_test2/build/imgsubscriber': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/noth5593/CLionProjects/20241119_test2/build/imgsubscriber -- -j20 -l20
-Invoked command in '/home/noth5593/CLionProjects/20241119_test2/build/imgsubscriber' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/noth5593/CLionProjects/20241119_test2/build/imgsubscriber -- -j20 -l20
-Invoking command in '/home/noth5593/CLionProjects/20241119_test2/build/imgsubscriber': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/noth5593/CLionProjects/20241119_test2/build/imgsubscriber
-Invoked command in '/home/noth5593/CLionProjects/20241119_test2/build/imgsubscriber' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/noth5593/CLionProjects/20241119_test2/build/imgsubscriber
