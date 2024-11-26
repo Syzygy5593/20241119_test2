@@ -3,10 +3,6 @@
 #include <opencv2/opencv.hpp>
 #include <cv_bridge/cv_bridge.h>
 #include <iostream>
-#include <oneapi/tbb/task_arena.h>
-#include "opencv2/core.hpp"
-#include "opencv2/highgui.hpp"
-#include "opencv2/imgproc.hpp"
 #include <geometry_msgs/msg/point32.hpp>
 
 using namespace cv;
@@ -27,42 +23,41 @@ private:
     {
         try
         {
-            cv_bridge::CvImagePtr cv_ptr = cv_bridge::toCvCopy(msg, "bgr8");
-            Mat img = cv_ptr->image;
-            Mat imgDraw = cv_ptr->image;
+            auto cv_ptr = cv_bridge::toCvShare(msg, "bgr8");
+            Mat imgRaw = cv_ptr->image;
+            Mat imgDraw = imgRaw.clone();
             Mat imgHSV, maskLine, maskTap;
             //----------------------------------------//
-            rectangle(img,Point(800,100),Point(1140,1),Scalar(0,0,0),FILLED);
-            rectangle(img,Point(0,0),Point(100,50),Scalar(0,0,0),FILLED);
-            cvtColor(img,imgHSV,COLOR_BGR2HSV);
+            rectangle(imgRaw,Point(800,100),Point(1140,0),Scalar(0,0,0),FILLED);
+            rectangle(imgRaw,Point(0,0),Point(100,50),Scalar(0,0,0),FILLED);
+            cvtColor(imgRaw,imgHSV,COLOR_BGR2HSV);
             //------------------Line Processing Begin--------------------//
-            Scalar lowerLine(0, 0, 255);
-            Scalar upperLine(179, 0, 255);
-            inRange(imgHSV,lowerLine,upperLine,maskLine);
-            Mat dil;
-            Mat kernel = getStructuringElement(MORPH_RECT, Size(15, 15));
-            dilate(maskLine,dil,kernel);
-            Mat kernel2 = getStructuringElement(MORPH_RECT, Size(13, 13));
-            erode(dil,dil,kernel2);
+            Mat lineWhite, lineBlur, lineCanny, lineDilate, lineErode;
+            inRange(imgHSV, Scalar(0, 0, 255), Scalar(179, 0, 255), lineWhite);
+            GaussianBlur(lineWhite,lineBlur,Size(3,3),0,0);
+            Canny(lineBlur,lineCanny,100,100,3);
+            dilate(lineCanny,lineDilate,getStructuringElement(MORPH_RECT, Size(5, 5)));
+            erode(lineDilate,lineErode,getStructuringElement(MORPH_RECT, Size(5, 5)));
+            //imshow("image",lineErode);
 
-            vector<Vec4i> lines;
-            HoughLinesP(dil, lines, 1, CV_PI / 180, 40, 10, 10);
+            vector<Vec4i> lineDetected;
+            HoughLinesP(lineDilate, lineDetected, 1, CV_PI / 180, 40, 10, 10);
             int maxLength = 0, maxLengthi = 0;
-            for (size_t i = 0; i < lines.size(); i++) {
-              Vec4i l = lines[i];
+            for (size_t i = 0; i < lineDetected.size(); i++) {
+              Vec4i l = lineDetected[i];
               double length = sqrt(pow((l[0]-l[2]),2)+pow((l[1]-l[3]),2));
               if(length > maxLength) {
                 maxLength = length;
                 maxLengthi = i;
               }
             }
-            Vec4i l = lines[maxLengthi];
+            Vec4i l = lineDetected[maxLengthi];
             //cout << "length = " << maxLength << endl;
             double slope = (double)(l[3] - l[1]) / (l[2] - l[0]);
             double intercept = l[1] - slope * l[0];
             //string str1 = "y = " + to_string(slope) + "x + " + to_string(intercept);
             //putText(imgDraw,str1,Point(0,610),FONT_HERSHEY_SIMPLEX, 0.7, Scalar(0,0,255), 2);
-            //line(imgDraw, Point(l[0], l[1]), Point(l[2], l[3]), Scalar(0, 0, 255), 3, LINE_AA);
+            line(imgDraw, Point(l[0], l[1]), Point(l[2], l[3]), Scalar(0, 0, 255), 3, LINE_AA);
 
             //------------------Line Processing End--------------------//
             //------------------Tap Processing Begin--------------------//
@@ -134,20 +129,3 @@ int main(int argc, char **argv)
     rclcpp::shutdown();
     return 0;
 }
-/*
-clickPointSubscription = create_subscription<geometry_msgs::msg::Point32>(
-                "/click_position",
-                10,
-                [this](geometry_msgs::msg::Point32::SharedPtr msg) {
-                    try {
-                        float info[2]{msg->x, msg->y};
-                        server.send(hdl, &info, sizeof(info), websocketpp::frame::opcode::value::binary);
-                        RCLCPP_INFO_STREAM(this->get_logger(),
-                                           "Send position: (" << msg->x << " " << msg->y << ")");
-                    } catch (websocketpp::exception const &e) {
-                        RCLCPP_FATAL_STREAM(this->get_logger(),
-                                            "Send failed because: " << "(" << e.what() << ")");
-                    }
-                });
-imagePublisher = create_publisher<sensor_msgs::msg::Image>("/raw_image", 10);
-*/
