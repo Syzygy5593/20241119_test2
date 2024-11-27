@@ -77,8 +77,8 @@ class test1: public rclcpp::Node {
                 double distance = sqrt(pow(targetX - pointX, 2) + pow(targetY - pointY, 2));
                 if (distance < 50) {
                     geometry_msgs::msg::Point32 info;
-                    info.x = 1.0 f * targetX;
-                    info.y = 1.0 f * targetY;
+                    info.x = 1.0f * targetX;
+                    info.y = 1.0f * targetY;
                     RCLCPP_INFO(this -> get_logger(), "Publishing: (%f, %f)", info.x, info.y);
                     publisher_ -> publish(info);
                     break;
