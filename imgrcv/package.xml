@@ -1,16 +1,22 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>homework</name>
+  <name>imgrcv</name>
   <version>0.0.0</version>
   <description>TODO: Package description</description>
-  <maintainer email="1012866210@qq.com">mijiao</maintainer>
-  <license>Apache-2.0</license>
+  <maintainer email="noth5593@163.com">noth5593</maintainer>
+  <license>Apache 2.0</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
-
+  <exec_depend>rclcpp</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>cv_bridge</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>opencv</exec_depend>
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
+
+  <url type="repository">https://github.com/Syzygy5593/20241119_test2</url>
 
   <export>
     <build_type>ament_cmake</build_type>
